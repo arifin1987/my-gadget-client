@@ -8,13 +8,20 @@ const HomePage = async () => {
   const res = await fetch("http://localhost:5000/laptops/");
   const data = await res.json();
   const flashSale = data.filter((sale: TLaptop) => sale.flash_sale === true);
+  const topCategory = data.filter(
+    (category: TLaptop) => category.top_category === true
+  );
+  const popularProduct = data.filter(
+    (popular: TLaptop) => popular.product_rating >= 4.3
+  );
+  console.log(popularProduct);
 
   return (
     <div>
       <Banner />
       <FlashSale flashSale={flashSale} />
-      <TopCategories />
-      <MostPopularProducts />
+      <TopCategories topCategory={topCategory} />
+      <MostPopularProducts popularProduct={popularProduct} />
     </div>
   );
 };
