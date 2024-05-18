@@ -1,8 +1,8 @@
 import { TLaptop } from "@/types";
 import Image from "next/image";
 
-const TopCategoriesCard = ({ category }: { category: TLaptop }) => {
-  const { name, image, brand, configuration, price, product_rating } = category;
+const LaptopCard = ({ laptop }: { laptop: TLaptop }) => {
+  const { name, image, brand, configuration, price, product_rating } = laptop;
   return (
     <div>
       <Image src={image} width={400} height={80} alt="image" />
@@ -15,4 +15,4 @@ const TopCategoriesCard = ({ category }: { category: TLaptop }) => {
   );
 };
 
-export default TopCategoriesCard;
+export default LaptopCard;

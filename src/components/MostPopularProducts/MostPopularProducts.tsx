@@ -12,9 +12,11 @@ const MostPopularProducts = ({
         Most Popular Products
       </h1>
       <p className="w-2/4 ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta
+        On the other hand, students or casual users might find joy in a more
+        affordable option that excels at everyday tasks like web browsing,
+        social media.
       </p>
-      <div>
+      <div className="md:grid grid-cols-4 gap-4 my-8">
         {popularProduct.map((popular) => (
           <MostPopularProductCard key={popular._id} popular={popular} />
         ))}

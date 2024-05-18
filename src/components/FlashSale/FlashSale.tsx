@@ -9,7 +9,7 @@ const FlashSale = ({ flashSale }: { flashSale: TLaptop[] }) => {
       </h1>
 
       <div className="md:grid grid-cols-4 gap-4 my-6">
-        {flashSale.map((laptop) => (
+        {flashSale.slice(0, 4).map((laptop) => (
           <FlashSaleCard key={laptop._id} laptop={laptop} />
         ))}
       </div>
