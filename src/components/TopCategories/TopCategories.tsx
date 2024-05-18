@@ -1,7 +1,10 @@
 import { TLaptop } from "@/types";
 import TopCategoriesCard from "../ui/TopCategoriesCard";
 
-const TopCategories = ({ topCategory }: { topCategory: TLaptop[] }) => {
+const TopCategories = ({ data }: { data: TLaptop[] }) => {
+  const topCategory = data.filter(
+    (category: TLaptop) => category.top_category === true
+  );
   return (
     <div>
       <h1 className="text-4xl text-accent text-center my-4 border-y-2 border-emerald-400 w-[25%] mx-auto py-2">

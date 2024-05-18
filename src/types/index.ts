@@ -8,4 +8,5 @@ export interface TLaptop {
   brand: string;
   flash_sale: boolean;
   top_category: boolean;
+  description: string;
 }

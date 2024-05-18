@@ -1,8 +1,12 @@
+"use client";
+
 import { TLaptop } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 
 const LaptopCard = ({ laptop }: { laptop: TLaptop }) => {
-  const { name, image, brand, configuration, price, product_rating } = laptop;
+  const { name, image, brand, configuration, price, product_rating, _id } =
+    laptop;
   return (
     <div>
       <Image src={image} width={400} height={80} alt="image" />
@@ -11,6 +15,9 @@ const LaptopCard = ({ laptop }: { laptop: TLaptop }) => {
       <p className="text-green-500">{configuration}</p>
       <p>Product Rating : {product_rating}</p>
       <p className="text-orange-500">${price}</p>
+      <Link href={`/laptop/${_id}`}>
+        <button className="btn btn-outline btn-accent">View Details</button>
+      </Link>
     </div>
   );
 };

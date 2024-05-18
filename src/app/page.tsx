@@ -11,20 +11,13 @@ const HomePage = async () => {
     },
   });
   const data = await res.json();
-  const flashSale = data.filter((sale: TLaptop) => sale.flash_sale === true);
-  const topCategory = data.filter(
-    (category: TLaptop) => category.top_category === true
-  );
-  const popularProduct = data.filter(
-    (popular: TLaptop) => popular.product_rating >= 4.3
-  );
 
   return (
     <div>
       <Banner />
-      <FlashSale flashSale={flashSale} />
-      <TopCategories topCategory={topCategory} />
-      <MostPopularProducts popularProduct={popularProduct} />
+      <FlashSale data={data} />
+      <TopCategories data={data} />
+      <MostPopularProducts data={data} />
     </div>
   );
 };

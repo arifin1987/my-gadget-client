@@ -4,12 +4,12 @@ const Navbar = () => {
   const navItems = (
     <>
       <Link href="/">Home</Link>
-      <Link href="/categories">Categories</Link>
+
       <Link href="/laptop">Laptop</Link>
-      <Link href="/flash">Flash Sale</Link>
+      <Link href="/flash-sale">Flash Sale</Link>
       <Link href="/about">About Us</Link>
       <Link href="/contact">Contact Us</Link>
-      <Link href="/dashborad">Dashboard</Link>
+      <Link href="/dashboard">Dashboard</Link>
     </>
   );
   return (

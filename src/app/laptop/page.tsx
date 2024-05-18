@@ -3,11 +3,13 @@ import { TLaptop } from "@/types";
 import React from "react";
 
 const LaptopPage = async () => {
-  const res = await fetch("http://localhost:5000/laptops/");
+  const res = await fetch("http://localhost:5000/laptop/", {
+    cache: "no-store",
+  });
   const allLaptop = await res.json();
 
   return (
-    <div>
+    <div className=" my-4">
       <div className=" my-4">
         <h1 className="text-4xl text-accent text-center my-4 border-y-2 border-emerald-400 w-[25%]  py-2 mx-auto ">
           All Laptop

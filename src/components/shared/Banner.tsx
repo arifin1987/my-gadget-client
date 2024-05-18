@@ -22,7 +22,9 @@ const Banner = () => {
       </div>
       <div>
         <Image
-          src={img2}
+          src={
+            "https://img.freepik.com/premium-photo/vintage-camera-with-laptop-computer-white-blank-screen-wood-work-table-front-view_34008-319.jpg?w=740"
+          }
           width={200}
           height={50}
           quality={80}
@@ -31,7 +33,9 @@ const Banner = () => {
       </div>
       <div>
         <Image
-          src={img3}
+          src={
+            "https://img.freepik.com/free-psd/elegant-computer-mockup_1310-736.jpg?w=740&t=st=1716065909~exp=1716066509~hmac=50433717a49461e6499bb523ff42e5941b2d3cd452e7e6f7b8eaa36eb7559d23"
+          }
           width={200}
           height={50}
           quality={80}
