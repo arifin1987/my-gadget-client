@@ -7,7 +7,6 @@ export interface TLaptopId {
 }
 
 const LaptopDetailPage = async ({ params }: TLaptopId) => {
-  console.log(params);
   const res = await fetch(`http://localhost:5000/laptop/${params.laptopId}`);
   const laptop = await res.json();
 

@@ -5,7 +5,7 @@ import Banner from "@/components/shared/Banner";
 import { TLaptop } from "@/types";
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:5000/laptops/", {
+  const res = await fetch("http://localhost:5000/laptop", {
     next: {
       revalidate: 30,
     },

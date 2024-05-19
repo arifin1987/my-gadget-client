@@ -7,7 +7,7 @@ const Navbar = () => {
 
       <Link href="/laptop">Laptop</Link>
       <Link href="/flash-sale">Flash Sale</Link>
-      <Link href="/about">About Us</Link>
+      <Link href="/about-us">About Us</Link>
       <Link href="/contact">Contact Us</Link>
       <Link href="/dashboard">Dashboard</Link>
     </>
