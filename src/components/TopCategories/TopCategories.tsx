@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import AsusLaptopCard from "../ui/AsusLaptopCard";
 import LenovoLaptopCard from "../ui/LenovoLaptopCard";
 import DellLaptopCard from "../ui/DellLaptopCard";
+import Link from "next/link";
 
 const TopCategories = ({ data }: { data: TLaptop[] }) => {
   const dellLaptops = data.filter((item) => item.brand == "Dell");
@@ -48,6 +49,11 @@ const TopCategories = ({ data }: { data: TLaptop[] }) => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="text-center">
+        <Link href="/laptop">
+          <button className="btn btn-outline btn-accent ">View All</button>
+        </Link>
       </div>
     </div>
   );

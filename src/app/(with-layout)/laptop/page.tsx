@@ -1,6 +1,7 @@
 import LaptopCard from "@/components/ui/LaptopCard";
 import { TLaptop } from "@/types";
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -29,6 +30,11 @@ const LaptopPage = async () => {
         {allLaptop.map((laptop: TLaptop) => (
           <LaptopCard key={laptop._id} laptop={laptop} />
         ))}
+      </div>
+      <div className="text-center my-4">
+        <Link href="/laptop">
+          <button className="btn btn-success ">Load More</button>
+        </Link>
       </div>
     </div>
   );

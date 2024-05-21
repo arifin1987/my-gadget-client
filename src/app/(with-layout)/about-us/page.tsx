@@ -25,9 +25,7 @@ const AboutUsPage = () => {
         total of 17 Physical outlets all over the country; selling genuine Tech
         products. Among them, 9 outlets are in Dhaka as it’s the capital city.
         Star Tech also has two branches in Chittagong; the commercial capital of
-        Bangladesh. There is one Branch in Gazipur, one in Khulna, one in
-        Rajshahi, and one Branch in Rangpur. Apart from the Physical Branches,
-        We also have our successful E-Commerce website.
+        Bangladesh.
       </p>
     </div>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaCopyright } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,6 +25,9 @@ const Footer = () => {
           Contact
         </Link>
       </nav>
+      <p className="flex items-center">
+        Copyright <FaCopyright /> 2024 My-Gadget ltd.
+      </p>
     </footer>
   );
 };
